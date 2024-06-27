@@ -9,6 +9,3 @@
 * css modules
 * linters
 * type checking
-
-* http headers(todo)
-

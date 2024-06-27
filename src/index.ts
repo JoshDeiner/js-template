@@ -1,5 +1,5 @@
 import './env.ts'
-import './styles.css'
+import '../styles/global.css'
 
 function addToRoot() {
   document.addEventListener('DOMContentLoaded', function () {
