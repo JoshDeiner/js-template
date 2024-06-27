@@ -4,20 +4,30 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "lint": "eslint 'src/**/*.js'",
-    "format": "prettier --write 'src/**/*.js'",
+    "lint": "npx eslint src",
+    "lint:css": "stylelint 'src/**/*.{css, ts}'",
+    "format": "prettier --write 'src/**/*.ts'",
     "build": "webpack --config webpack.prod.js",
     "serve:dev": "webpack serve --config webpack.dev.js --open",
-    "serve:prod": "npm run build; npx http-server dist"
+    "serve:prod": "npm run build; npx http-server dist",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@eslint/js": "^9.5.0",
+    "@types/eslint__js": "^8.42.3",
     "autoprefixer": "^10.4.19",
     "css-loader": "^7.1.2",
     "css-minimizer-webpack-plugin": "^7.0.0",
     "dotenv": "^16.4.5",
+    "eslint": "^8.57.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.2.0",
+    "globals": "^15.6.0",
     "html-webpack-inline-source-plugin": "^0.0.10",
     "html-webpack-plugin": "^5.6.0",
     "http-server": "^14.1.1",
@@ -25,15 +35,20 @@
     "postcss": "^8.4.38",
     "prettier": "^3.3.2",
     "style-loader": "^4.0.0",
+    "stylelint": "^16.6.1",
+    "stylelint-config-standard": "^36.0.1",
+    "stylelint-config-tailwindcss": "^0.0.7",
     "tailwindcss": "^3.4.4",
     "ts-loader": "^9.5.1",
     "typescript": "^5.5.2",
+    "typescript-eslint": "^7.14.1",
     "webpack": "^5.92.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.0.4"
   },
   "dependencies": {
-    "redux": "^5.0.1",
+    "@reduxjs/toolkit": "^2.2.5",
+    "postcss-loader": "^8.1.1",
     "rxjs": "^7.8.1"
   }
 }
