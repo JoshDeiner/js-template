@@ -7,8 +7,6 @@
 * production bundle 
 * typescript
 * css modules
-
-* http headers(todo)
-* linters -> airbnb style guide(todo)
+* linters
 * type checking
-* containerized
+
