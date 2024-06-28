@@ -1,5 +1,5 @@
 import './env.ts'
-import '../styles/global.css'
+import appComponent from '../components/appComponent/appComponent'
 
 function addToRoot() {
   document.addEventListener('DOMContentLoaded', function () {
@@ -7,7 +7,6 @@ function addToRoot() {
 
     // Create a new element
     const newElement = document.createElement('div')
-    newElement.className = 'dynamic-content'
     newElement.textContent =
       'This content was added dynamically with JavaScript!'
 
@@ -20,3 +19,4 @@ function addToRoot() {
 }
 
 addToRoot()
+appComponent()

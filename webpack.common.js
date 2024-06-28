@@ -12,7 +12,7 @@ module.exports = (env) => {
   }, {});
 
   return {
-    entry: ['./src/index.ts', './src/env.ts'],
+    entry: ['./src/index.ts', './src/env.ts', './styles/global.css'],
     output: {
       filename: '[name].[contenthash].js',
       path: path.resolve(__dirname, 'dist'),
